@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 2rem;
+    /* border: 1px solid black; */
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+   
+    justify-self: flex-start;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    
+    justify-content: center;
+    
+}
+
+nav {
+    margin: 0 0;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr;
+    background: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#nav-logo {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: turquoise;
+    font-style: normal;
+    font-weight: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+}
+
+#version-tag {
+    font-size: 0.9rem;
+    font-style: bold;
+    letter-spacing: normal;
+}
+#languages {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 5px;
+    align-items: center;
+}
+
+#github a {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 5px;
+    align-items: center;
+}
+.searchbar {
+    display: grid;
+    justify-content: flex-end;
+    align-items: center;
+}
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 1fr 1fr;
+    grid-gap: 5px;
+    background:#282c34;
+    color: rgba(255,255,255,0.9);
+    height: 50vh;
+    padding-top: 1.6vh;
+}
+.hero h1{
+    grid-row: 2/3;
+    color: turquoise;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 3rem;
+    align-self: center;
+}
+
+.hero p {
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+}
+.cta {
+    grid-row: 4/5;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding-bottom: 20px;
+}
+.cta button {
+    border: none;
+    font-size: 0.9rem;
+    margin: 10px;
+    padding: 2px 20px 2px 20px;
+}
+
+
+#cta-1 {
+    background: turquoise;
+    color: #282c34;
+    transition: background 0.5s;
+}
+
+#cta-2 {
+    color: turquoise;
+    background: #282c34;
+    transition: color 0.5s;
+
+}
+#cta-1:hover {
+    background: white;
+    transition: background 0.5s;
+}
+#cta-2:hover {
+    color: white;
+    transition: color 0.5s;
+}
+
+
+.content {
+    margin-top: 40px;
+    display: grid;
+    grid-gap: 30px;
+    padding: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+}
+
+.content h2 {
+    font-weight: 150;
+    font-size: 1.25rem;
+    color: silver;
+    display: grid;
+    text-align: Left;
+    align-items: center;
+    height: 100px;
+}
+
