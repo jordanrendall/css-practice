@@ -28,8 +28,8 @@ header {
 
 nav {
     margin: 0 0;
-    display: grid;
-    grid-template-columns: auto 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
     background: black;
     color: white;
     position: fixed;
@@ -37,8 +37,12 @@ nav {
     width: 100%;
 }
 
+
+
 #nav-logo {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
     justify-content: center;
     padding: 10px;
     color: turquoise;
@@ -48,11 +52,14 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: space-around;
+
     list-style: none;
     align-items: center;
     font-weight: 100;
     letter-spacing: 1.5px;
+}
+nav ul li {
+    margin: 10px;
 }
 
 #version-tag {
@@ -138,8 +145,14 @@ nav ul {
     color: white;
     transition: color 0.5s;
 }
+#secondary-menu {
+    font-size: 0.9rem;
+}
 
+#secondary-menu li:hover{
+    color: turquoise;
 
+}
 .content {
     margin-top: 40px;
     display: grid;
