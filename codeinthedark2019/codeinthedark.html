@@ -1,0 +1,125 @@
+<html>
+  <body>
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      .checkerboard {
+        display: grid;
+        grid-template-columns: repeat(8, 8px);
+        grid-template-rows: repeat(8, 8px);
+        justify-self: center;
+        align-self: center;
+        grid-gap: 0px;
+        box-shadow: 1px 1px 3px grey;
+      }
+      .checkerboard :nth-child(odd) :nth-child(odd) {
+        height: 100%;
+        width: 100%;
+        background-color: black;
+      }
+      .checkerboard :nth-child(even) :nth-child(odd) {
+        height: 100%;
+        width: 100%;
+        background-color: brown;
+      }
+
+      .checkerboard :nth-child(odd) :nth-child(even) {
+        height: 100%;
+        width: 100%;
+        background-color: brown;
+      }
+      .checkerboard :nth-child(even) :nth-child(even) {
+        height: 100%;
+        width: 100%;
+        background-color: black;
+      }
+    </style>
+
+    <div class="checkerboard">
+      <div class="column">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="column">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="column">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="column">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="column">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="column">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="column">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="column">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </div>
+  </body>
+</html>
