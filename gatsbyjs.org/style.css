@@ -1,0 +1,125 @@
+*, html, body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Futura";
+    font-weight: lighter;
+}
+
+#announcement-banner {
+    background: rebeccapurple;
+    color: white;
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.85rem;
+}
+
+#announcement-banner a {
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+#announcement-banner a:hover {
+    text-decoration-color: silver;
+}
+
+#navbar {
+    display: grid;
+    padding-left: 10px;
+    grid-template-columns: auto 4fr 1fr;
+}
+
+#main-menu {
+    display: flex;
+    justify-content: flex-start;
+    padding: 2px;
+    list-style: none;
+    margin-left: 10px;
+}
+
+#main-menu li {
+    padding: 20px 10px 20px 10px;
+}
+
+#main-menu li:hover {
+    color: rebeccapurple;
+}
+
+#social-menu li {
+    padding: 20px 5px 20px 5px;
+}
+
+#social-menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2px;
+    margin-right: 10px;
+    list-style: none;
+}
+
+article {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+} */
+h2 {
+    color: rebeccapurple;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#main-section {
+    height: 63vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    border-bottom: 1px solid hsla(270, 50%, 40%, 0.1);
+}
+
+#main-section > * {
+    width: 65vw;
+}
+
+#logo img {
+    height: 20px;
+    width: 20px;
+    display: block;
+}
+
+#logo {
+    display: block;
+}
+
+h3 {
+    line-height: 2rem;
+    padding-top: 2%;
+    font-size: 1.5rem;
+}
+
+.cta {
+    background: rebeccapurple;
+    padding: 10px;
+    width: 50%;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin: 30px 0;
+    justify-self: center;
+    align-self: center;
+}
