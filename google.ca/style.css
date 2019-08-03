@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  font-family: Futura;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+nav ul {
+  display: flex;
+  grid-column: 3/4;
+  padding: 10px;
+}
+
+nav ul li {
+  margin: 10px;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+  height: 100vh;
+}
+
+.cta {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+
+#main-searchbar {
+  max-width: 500px;
+  min-width: 400px;
+  width: 80vw;
+}
+
+.hero {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-main-img {
+  justify-self: center;
+  width: 400px;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+#recent-bubble-list {
+  display: grid;
+  min-width: 300px;
+  max-width: 500px;
+  grid-template-columns: repeat(auto-fill, 100px);
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-weight: 50;
+  justify-self: center;
+}
+
+@media (min-width: 774px) {
+  #recent-bubble-list:nth-child(8),
+  :nth-child(9),
+  :nth-child(10) {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 639px) {
+  #recent-bubble-list:nth-child(8),
+  :nth-child(9),
+  :nth-child(10) {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 639px) {
+  #recent-bubble-list:nth-child(7),
+  :nth-child(8),
+  :nth-child(9),
+  :nth-child(10) {
+    visibility: hidden;
+  }
+}
+
+#recent-bubble-list-container {
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#recent-bubble-list li {
+  display: grid;
+  justify-content: center;
+}
+
+#recent-bubble-list div {
+  display: grid;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  background: hsla(240, 10%, 90%, 0.8);
+  margin-bottom: 20px;
+}
+
+#recent-bubble-list p {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  font-weight: 100;
+}
+
+#recent-bubble-list img {
+  width: 25px;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.user-bubble img {
+  border-radius: 50%;
+  width: 40px;
+  background: hsla(240, 10%, 90%, 0.8);
+  height: 40px;
+}
+
+.app-selector {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-selector img {
+  width: 15px;
+}
